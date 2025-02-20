@@ -25,7 +25,7 @@ pipeline {
                 sh 'pytest tests/'
             }
         }
-    }
+    
 
     post {
         success {
