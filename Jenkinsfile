@@ -1,12 +1,7 @@
 pipeline {
     agent any
 
-    environment {
-        GIT_CREDENTIALS_ID = 'github-cred'  // Define only if using private repo
-        REPO_URL = 'https://github.com/CHINNAKOTLAJAGANNATH/Flask_API_Capstone_Project.git'
-        BRANCH = 'main'
-    }
-
+   
     stage('Clone Repository') {
     steps {
         git credentialsId: 'cred-jenkins', 
